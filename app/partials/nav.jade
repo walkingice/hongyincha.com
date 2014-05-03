@@ -1,7 +1,20 @@
-ul.nav
-  li(ng-class="getClass('/list')")
-    a(ng-href='#/list') List
-  li(ng-class="getClass('/foo')")
-    a(ng-href='#/foo') Foo
-  li(ng-class="getClass('/about')")
-    a(ng-href='#/about') About
+.wrapper
+  header#top.navbar-inverse.navbar(rols="banner")
+    .navbar.navbar-inverse.navbar-fixed-top
+        .navbar-inner
+          .container
+              button.btn.btn-navbar(type="button", data-toggle="collapse", data-target=".nav-collapse")
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+              a.brand(href="/") 紅印茶莊
+              .nav-collapse.collapse
+                ul.nav
+                  li
+                    a(ng-href='/') 首頁
+                  li
+                    a(ng-href='#/about') 關於
+                ul.nav.navbar-nav.navbar-right
+                  li
+                    a(href="https://github.com") Github
+
