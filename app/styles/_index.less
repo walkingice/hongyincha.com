@@ -1,9 +1,23 @@
 
+@font-face {
+	font-family: hongyin;
+	src: url(/fonts/hongyin.woff);
+}
+
 #intro {
 	background: #111 url(/imgs/bg.jpg) no-repeat center center;
 	color:  @white;
 	padding-top: 50px;
 	padding-bottom: 50px;
+	.webfont {
+		font-family: hongyin;
+	}
+	h1.name {
+		font-size: 100pt;
+		line-height: 100pt;
+		color: #831414;
+		text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
+	}
 }
 
 #traffic {
